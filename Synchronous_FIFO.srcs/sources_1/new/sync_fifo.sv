@@ -62,7 +62,7 @@ module sync_fifo #( //Parameter port list
             rd_ptr <= '0;
             count <= '0;
             data_out <= '0;
-            
+        end
         else begin
             // Write operation
             if (wr_fire) begin
