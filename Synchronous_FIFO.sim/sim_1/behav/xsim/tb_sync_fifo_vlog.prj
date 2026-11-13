@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "D:/AMDXilinx/2026.1/Vivado/data/rsb/busdef" \
+"../../../../Synchronous_FIFO.srcs/sources_1/new/sync_fifo.sv" \
+"../../../../Synchronous_FIFO.srcs/sim_1/new/tb_sync_fifo.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
